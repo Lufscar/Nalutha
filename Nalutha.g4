@@ -1,0 +1,23 @@
+grammar Nalutha;
+
+/*
+    Declaração das regras léxicas
+*/
+Id: ('a'..'z'|'A'..'Z'|'_')*;
+model_lex: 'Model';
+entity_lex: 'Entity';
+dois_pontos: ':';
+abre_chave: '{';
+fecha_chave: '}';
+
+fragment
+ESC_SEQ	: '\\\'';
+WS: ( ' ' | '\t' | '\r' | '\n') -> skip;
+
+/*
+    Declaração das regras sintáticas
+*/
+program: model EOF;
+model: 'Model' '{' entity* '}';
+entity: 'Entity' Id '{' field+ '}';
+field: fieldName=Id ':' fieldType=Id;
