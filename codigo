@@ -3,6 +3,7 @@ Model {
     Entity Game {
         name: string
         publisher: string
+        name: string
     }
 
     Entity Platform {
