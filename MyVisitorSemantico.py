@@ -2,7 +2,7 @@ from NaluthaVisitor import NaluthaVisitor
 from NaluthaParser import NaluthaParser
 from Escopo import Escopo
 
-class MyVisitor(NaluthaVisitor):
+class MyVisitorSemantico(NaluthaVisitor):
     def __init__(self):
         self.escopo = Escopo()
 
@@ -14,8 +14,8 @@ class MyVisitor(NaluthaVisitor):
         return retorno
 
     def visitField(self, ctx):
-        name = ctx.Id()[0].getText()
-        linha = str(ctx.Id()[0].getSymbol().line)
+        name = ctx.fieldName.text
+        linha = str(ctx.fieldName.line)
         escopoAtual = self.escopo.obterEscopoAtual()
 
         if not escopoAtual.existe(name):

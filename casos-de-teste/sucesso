@@ -1,0 +1,12 @@
+Model {
+
+    Entity Game {
+        name: string
+        publisher: string
+    }
+
+    Entity Platform {
+        name: string
+    }
+
+}
