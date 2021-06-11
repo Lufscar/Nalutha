@@ -8,6 +8,12 @@ Dentro da pasta do projeto, rodar os seguintes comandos:
 antlr4 -Dlanguage=Python3 Nalutha.g4
 ```
 
+## Compilar a linguagem com visitor
+
+```
+antlr4 -Dlanguage=Python3 -visitor Nalutha.g4
+```
+
 ## Rodar o código teste como entrada
 
 ```

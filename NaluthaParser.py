@@ -91,6 +91,12 @@ class NaluthaParser ( Parser ):
             if hasattr( listener, "exitModel_lex" ):
                 listener.exitModel_lex(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitModel_lex" ):
+                return visitor.visitModel_lex(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -127,6 +133,12 @@ class NaluthaParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitEntity_lex" ):
                 listener.exitEntity_lex(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitEntity_lex" ):
+                return visitor.visitEntity_lex(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -165,6 +177,12 @@ class NaluthaParser ( Parser ):
             if hasattr( listener, "exitDois_pontos" ):
                 listener.exitDois_pontos(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitDois_pontos" ):
+                return visitor.visitDois_pontos(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -202,6 +220,12 @@ class NaluthaParser ( Parser ):
             if hasattr( listener, "exitAbre_chave" ):
                 listener.exitAbre_chave(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAbre_chave" ):
+                return visitor.visitAbre_chave(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -238,6 +262,12 @@ class NaluthaParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitFecha_chave" ):
                 listener.exitFecha_chave(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitFecha_chave" ):
+                return visitor.visitFecha_chave(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -281,6 +311,12 @@ class NaluthaParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitProgram" ):
                 listener.exitProgram(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitProgram" ):
+                return visitor.visitProgram(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -326,6 +362,12 @@ class NaluthaParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitModel" ):
                 listener.exitModel(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitModel" ):
+                return visitor.visitModel(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -387,6 +429,12 @@ class NaluthaParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitEntity" ):
                 listener.exitEntity(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitEntity" ):
+                return visitor.visitEntity(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -450,6 +498,12 @@ class NaluthaParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitField" ):
                 listener.exitField(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitField" ):
+                return visitor.visitField(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
