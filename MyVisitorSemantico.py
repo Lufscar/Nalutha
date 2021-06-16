@@ -24,5 +24,5 @@ class MyVisitorSemantico(NaluthaVisitor):
             escopoAtual.inserir(name)
         else:
             mensagem = ""+name+ "já está declarado"
-            self.semanticoUtils.adicionarErroSemantico(ctx.start, mensagem)
+            self.semanticoUtils.adicionarErroSemantico(ctx, mensagem)
         return self.visitChildren(ctx)

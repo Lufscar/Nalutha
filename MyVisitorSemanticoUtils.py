@@ -5,7 +5,7 @@ class MyVisitorSemanticoUtils():
     # Inicializa a lista de erros semânticos
         self.errosSemanticos = []
 
-    def adicionarErroSemantico(self, t: Token, mensagem: str):
+    def adicionarErroSemantico(self, ctx, mensagem):
     # adiciona erro semântico na lista de erros
-        linha = t.getLine()
+        linha = str(ctx.fieldName.line)
         self.errosSemanticos.append("Linha "+linha+": "+mensagem)
