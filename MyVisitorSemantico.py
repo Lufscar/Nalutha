@@ -6,6 +6,7 @@ from MyVisitorSemanticoUtils import MyVisitorSemanticoUtils
 class MyVisitorSemantico(NaluthaVisitor):
     def __init__(self):
         self.escopo = Escopo()
+        self.semanticoUtils = MyVisitorSemanticoUtils()
 
     def visitEntity(self, ctx):
         name = ctx.Id().getText()
@@ -23,5 +24,5 @@ class MyVisitorSemantico(NaluthaVisitor):
             escopoAtual.inserir(name)
         else:
             mensagem = ""+name+ "já está declarado"
-            MyVisitorSemanticoUtils(ctx.start, mensagem)
+            self.semanticoUtils.adicionarErroSemantico(ctx.start, mensagem)
         return self.visitChildren(ctx)
