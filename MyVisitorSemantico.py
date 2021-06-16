@@ -1,6 +1,7 @@
 from NaluthaVisitor import NaluthaVisitor
 from NaluthaParser import NaluthaParser
 from Escopo import Escopo
+from MyVisitorSemanticoUtils import MyVisitorSemanticoUtils
 
 class MyVisitorSemantico(NaluthaVisitor):
     def __init__(self):
@@ -21,6 +22,6 @@ class MyVisitorSemantico(NaluthaVisitor):
         if not escopoAtual.existe(name):
             escopoAtual.inserir(name)
         else:
-            print("Erro " + linha + ": " + name + " já está declarado")
-
+            mensagem = ""+name+ "já está declarado"
+            MyVisitorSemanticoUtils(ctx.start, mensagem)
         return self.visitChildren(ctx)
