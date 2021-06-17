@@ -14,6 +14,9 @@ fragment
 ESC_SEQ	: '\\\'';
 WS: ( ' ' | '\t' | '\r' | '\n') -> skip;
 
+// Regra para verificação de erro léxico
+ERRO: .;
+
 /*
     Declaração das regras sintáticas
 */
