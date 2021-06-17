@@ -1,5 +1,5 @@
 from NaluthaVisitor import NaluthaVisitor
-from MyVisitorGeradorUtils import getType, listModels, listFields, listSerializers
+from MyVisitorGeradorUtils import getType, listModels, listFields, listSerializers, alterar_linha, nova_linha
 import os
 import time
 
@@ -45,6 +45,12 @@ class MyVisitorGerador(NaluthaVisitor):
             arq.write('\n\n')
             arq.write('router = routers.DefaultRouter()')
             arq.write('\n')
+
+        alterar_linha(self.project + '/' + self.project + '/urls.py', 17, 'from django.urls import path, include\n')
+        nova_linha(self.project + '/' + self.project + '/urls.py', 20,  '    path("", include("myapi.urls")),\n')
+
+        nova_linha(self.project + '/' + self.project + '/settings.py', 39,  '    "rest_framework",\n')
+        nova_linha(self.project + '/' + self.project + '/settings.py', 40,  '    "myapi.apps.MyapiConfig",\n')
         
         return self.visitChildren(ctx)
 
