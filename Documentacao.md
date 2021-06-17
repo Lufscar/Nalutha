@@ -14,8 +14,27 @@ antlr4 -Dlanguage=Python3 Nalutha.g4
 antlr4 -Dlanguage=Python3 -visitor Nalutha.g4
 ```
 
+## Instalar os requirements
+
+```
+pip install -r requirements.txt
+```
+
 ## Rodar o código teste como entrada
 
 ```
-python3 Nalutha.py codigo
+python3 Nalutha.py codigo <nome_projeto>
+```
+
+## Migração
+
+```
+python3 manage.py makemigrations
+python3 manage.py migrate
+```
+
+## Rodar o projeto django
+
+```
+python3 manage.py runserver
 ```
