@@ -1,13 +1,9 @@
-# Generated from Nalutha.g4 by ANTLR 4.9
+# Generated from Nalutha.g4 by ANTLR 4.7.2
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
+from typing.io import TextIO
 import sys
-if sys.version_info[1] > 5:
-	from typing import TextIO
-else:
-	from typing.io import TextIO
-
 
 def serializedATN():
     with StringIO() as buf:
@@ -71,10 +67,9 @@ class NaluthaParser ( Parser ):
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
-        self.checkVersion("4.9")
+        self.checkVersion("4.7.2")
         self._interp = ParserATNSimulator(self, self.atn, self.decisionsToDFA, self.sharedContextCache)
         self._predicates = None
-
 
 
 
@@ -121,7 +116,6 @@ class NaluthaParser ( Parser ):
             self.exitRule()
         return localctx
 
-
     class Entity_lexContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -164,7 +158,6 @@ class NaluthaParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
-
 
     class Dois_pontosContext(ParserRuleContext):
 
@@ -209,7 +202,6 @@ class NaluthaParser ( Parser ):
             self.exitRule()
         return localctx
 
-
     class Abre_chaveContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -253,7 +245,6 @@ class NaluthaParser ( Parser ):
             self.exitRule()
         return localctx
 
-
     class Fecha_chaveContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -296,7 +287,6 @@ class NaluthaParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
-
 
     class ProgramContext(ParserRuleContext):
 
@@ -348,7 +338,6 @@ class NaluthaParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
-
 
     class ModelContext(ParserRuleContext):
 
@@ -413,7 +402,6 @@ class NaluthaParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
-
 
     class EntityContext(ParserRuleContext):
 
@@ -485,7 +473,6 @@ class NaluthaParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
-
 
     class FieldContext(ParserRuleContext):
 

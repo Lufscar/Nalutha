@@ -3,7 +3,7 @@ grammar Nalutha;
 /*
     Declaração das regras léxicas
 */
-Id: ('a'..'z'|'A'..'Z'|'_')*;
+Id: ('a'..'z'|'A'..'Z')('a'..'z'|'A'..'Z'|'0'..'9'|'_')*;
 model_lex: 'Model';
 entity_lex: 'Entity';
 dois_pontos: ':';
