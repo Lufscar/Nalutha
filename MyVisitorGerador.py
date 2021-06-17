@@ -1,7 +1,6 @@
 from NaluthaVisitor import NaluthaVisitor
 from MyVisitorGeradorUtils import getType, listModels, listFields, listSerializers, alterar_linha, nova_linha
 import os
-import time
 
 class MyVisitorGerador(NaluthaVisitor):
     def __init__(self, project):

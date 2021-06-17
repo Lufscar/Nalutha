@@ -1,0 +1,17 @@
+Model {
+
+    Entity Publisher {
+        name: string
+        publisher: string
+    }
+
+    Entity Game {
+        name: string
+        publisher: Publisher
+    }
+
+    Entity Platform {
+        name: string
+    }
+
+}
