@@ -9,33 +9,13 @@ else:
 
 class NaluthaVisitor(ParseTreeVisitor):
 
-    # Visit a parse tree produced by NaluthaParser#model_lex.
-    def visitModel_lex(self, ctx:NaluthaParser.Model_lexContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by NaluthaParser#entity_lex.
-    def visitEntity_lex(self, ctx:NaluthaParser.Entity_lexContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by NaluthaParser#dois_pontos.
-    def visitDois_pontos(self, ctx:NaluthaParser.Dois_pontosContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by NaluthaParser#abre_chave.
-    def visitAbre_chave(self, ctx:NaluthaParser.Abre_chaveContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by NaluthaParser#fecha_chave.
-    def visitFecha_chave(self, ctx:NaluthaParser.Fecha_chaveContext):
-        return self.visitChildren(ctx)
-
-
     # Visit a parse tree produced by NaluthaParser#program.
     def visitProgram(self, ctx:NaluthaParser.ProgramContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by NaluthaParser#config.
+    def visitConfig(self, ctx:NaluthaParser.ConfigContext):
         return self.visitChildren(ctx)
 
 

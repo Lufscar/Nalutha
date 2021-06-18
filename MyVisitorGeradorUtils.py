@@ -1,10 +1,17 @@
 def getType(fieldType):
-        switcher = {
-            'string': 'Char',
-            'number': 'Integer',
-            'float': 'Decimal'
-        }
-        return switcher.get(fieldType, 'Invalid type')
+    switcher = {
+        'string': 'Char',
+        'number': 'Integer',
+        'float': 'Decimal'
+    }
+    return switcher.get(fieldType, 'Invalid type')
+
+def getFieldSize(fieldSize):
+    if not fieldSize:
+        return '60'
+    else:
+        return fieldSize.text
+
 
 def listModels(models):
     string = ''

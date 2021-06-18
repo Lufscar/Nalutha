@@ -1,12 +1,15 @@
+Project: teste
+Api name: myteste
+
 Model {
 
     Entity Game {
-        name: string
+        name: string [20]
         publisher: string
     }
 
     Entity Platform {
-        name: string
+        name: string [2]
     }
 
 }
