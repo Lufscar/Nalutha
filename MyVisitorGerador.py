@@ -14,6 +14,7 @@ class MyVisitorGerador(NaluthaVisitor):
             os.system('django-admin startproject ' + self.project)
             os.chdir(self.project)
             os.system('python3 manage.py startapp ' + self.api)
+            os.chdir('..')
         
         with open(self.project + '/' + self.api + '/models.py', 'w') as arq:
             arq.write('from django.db import models')
