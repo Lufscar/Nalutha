@@ -17,7 +17,7 @@ antlr4 -Dlanguage=Python3 -visitor Nalutha.g4
 ## Instalar os requirements
 
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 ## Rodar o código teste como entrada
