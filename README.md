@@ -37,7 +37,7 @@ Api name: nome-api
 
 O usuário precisa informar a configuração da sua api, nome e tipo dos campos e das entidades do banco dados. Temos como exemplo a criação de duas entidades: Game e Platform e de seus campos, name e publisher e name, respectivamente. Além disso temos que definir o tipo de cada campo, como por exemplo string ou number.
 
-Para os tipos string ainda é possível adicionar a quantidade máxima de caracteres aceito pelo banco de dados utilizando [].
+Para os tipos string ainda é possível adicionar a quantidade máxima de caracteres aceito pelo banco de dados utilizando colchetes.
 
 ```
 Model {
@@ -56,7 +56,7 @@ Model {
 
 ## Dependências
 
-Como o projeto foi desenvolvido em python, vamos precisar da instalação do `python3`. Além disso, para instalar as outras dependênciais de forma mais fácil, vamos precisar instalar o `pip3`.
+Como o projeto foi desenvolvido em python, vamos precisar da instalação do `python3`. Além disso, para instalar as outras dependências de forma mais fácil, vamos precisar instalar o `pip3`.
 
 ```
 sudo apt install python3.8
