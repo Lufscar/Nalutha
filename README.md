@@ -35,9 +35,9 @@ Api name: nome-api
 
 ### Adicionar informações referentes a cada entidade da api
 
-O usuário precisa informar a configuração da sua api, nome e tipo dos campos das entidades do banco dados. Temos como exemplo a crição de duas entidades: Game e Platform e de seus campos, respectivamente, name e publisher e name. Além disso temos que definir o tipo de cada campo, como por exemplo stringe number.
+O usuário precisa informar a configuração da sua api, nome e tipo dos campos e das entidades do banco dados. Temos como exemplo a criação de duas entidades: Game e Platform e de seus campos, name e publisher e name, respectivamente. Além disso temos que definir o tipo de cada campo, como por exemplo string ou number.
 
-Para os tipos string ainda é possível adicionar a quantidade máxima de caracteres aceitas pelo banco utilizando [].
+Para os tipos string ainda é possível adicionar a quantidade máxima de caracteres aceito pelo banco de dados utilizando [].
 
 ```
 Model {
