@@ -68,7 +68,7 @@ Os programas necessários para o funcionamento do compilador estão listados no 
 Para instalar todas as dependências a partir do arquivo:
 
 ```
-pip3 install -r requirements.txt.
+pip3 install -r requirements.txt
 ```
 
 ## Como utilizar
