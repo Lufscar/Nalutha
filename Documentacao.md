@@ -23,7 +23,7 @@ pip install -r requirements.txt
 ## Rodar o código teste como entrada
 
 ```
-python3 Nalutha.py codigo <nome_projeto>
+python3 Nalutha.py codigo
 ```
 
 ## Migração

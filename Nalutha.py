@@ -19,9 +19,8 @@ def main(argv):
         print(error)
 
     if not visitorSemantico.semanticoUtils.errosSemanticos and not parser.getNumberOfSyntaxErrors(): # list is empty
-        visitorGerador = MyVisitorGerador(argv[2])
+        visitorGerador = MyVisitorGerador()
         visitorGerador.visit(tree)
-
 
 if __name__ == '__main__':
     main(sys.argv)
