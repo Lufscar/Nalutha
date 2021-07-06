@@ -1,9 +1,5 @@
 # Nalutha
 
-Repositório destinado ao desenvolvimento da Nalutha - uma linguagem simplificada para bancos de dados relacionais, com comandos em português-brasileiro. A Nalutha está sendo projetada por Luciana Souza @lufscar, Natasha Graifman @natashagraifman e Thaís Dordan @thagd, com orientação do professor Daniel Lucrédio @dlucredio
-
-## Objetivo
-
 A linguagem desenvolvida neste projeto foi feita para facilitar o desenvolvimento de uma API utilizando a linguagem Python e Django Rest Framework, gerando todo o projeto do banco de dados e vinculando o admin do Django com a API. Tudo isso, seguindo boas práticas de programação.
 
 Para os que não tiveram contato com essas tecnologias ainda, vem aprender um pouquinho o que são!
