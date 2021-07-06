@@ -69,7 +69,7 @@ pip3 install -r requirements.txt
 
 ## Como utilizar
 
-Temos um arquivo _Documentacao_ na pasta do projeto com **todos** os códigos que você vai precisar utilizar para compilar/rodar o código desenvolvido por você ou algum exemplo disponibilizado na pasta _casos-de-teste_ utilizando o compilador Nalutha.
+Temos um arquivo _Documentacao_ na pasta do projeto com **todos** os comandos que você vai precisar utilizar para compilar/rodar o código desenvolvido por você ou algum exemplo disponibilizado na pasta _casos-de-teste_ utilizando o compilador Nalutha.
 
 ## Próximas features
 
